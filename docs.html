@@ -1,0 +1,39 @@
+
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>XNODE — Docs</title>
+<link rel="stylesheet" href="css/styles.css"/></head>
+<body>
+<header class="nav">
+  <div class="nav-inner container">
+    <a class="brand" href="./"><img src="assets/img/xnode-logo.png" alt="XNODE logo"/> XNODE</a>
+    <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">☰</button>
+    <nav id="menu">
+      <a href="./">Home</a><a href="whitepaper.html">Whitepaper</a><a href="developer.html">Developers</a><a href="roadmap.html">Roadmap</a><a class="active" href="docs.html">Docs</a><a href="community.html">Community</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <h1>Docs</h1>
+
+    <h2 id="setup">Validator Setup (Starter)</h2>
+    <ol>
+      <li>Provision Linux (8 cores, 32GB RAM recommended, SSD).</li>
+      <li>Install <code>rippled</code> and sync to mainnet.</li>
+      <li>Enable domain verification and publish validator token.</li>
+      <li>Harden firewall, monitoring; join community channels.</li>
+    </ol>
+
+    <h2 id="diagram">System Diagram</h2>
+    <figure class="figure">
+      <img src="assets/img/system-diagram.png" alt="XNODE system diagram"/>
+      <figcaption class="cap">Validators opt-in → Watchers observe → Rewards allocate → DAO oversees → XRPL pays out.</figcaption>
+    </figure>
+  </div>
+</main>
+
+<footer class="footer"><div class="container"><p>© XNODE</p></div></footer>
+<script src="js/main.js"></script>
+</body></html>

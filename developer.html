@@ -1,0 +1,63 @@
+
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>XNODE — Developers</title>
+<link rel="stylesheet" href="css/styles.css"/></head>
+<body>
+<header class="nav">
+  <div class="nav-inner container">
+    <a class="brand" href="./"><img src="assets/img/xnode-logo.png" alt="XNODE logo"/> XNODE</a>
+    <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">☰</button>
+    <nav id="menu">
+      <a href="./">Home</a><a href="whitepaper.html">Whitepaper</a><a class="active" href="developer.html">Developers</a><a href="roadmap.html">Roadmap</a><a href="docs.html">Docs</a><a href="community.html">Community</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <h1>Developer Docs</h1>
+    <p class="kicker">Telemetry → Rewards → DAO → XRPL / Payouts</p>
+
+    <h2>API Endpoints (Draft)</h2>
+    <pre class="code">
+Telemetry
+  POST /telemetry/ingest
+  GET  /telemetry/validator/:pubkey
+  GET  /telemetry/epoch/:id
+  GET  /telemetry/attestations/:epoch
+
+Rewards
+  POST /rewards/epoch
+  GET  /rewards/epoch/:id
+  POST /rewards/distribute
+  GET  /rewards/tx/:hash
+
+DAO
+  POST /dao/proposal
+  GET  /dao/proposals
+  POST /dao/vote
+  GET  /dao/treasury
+  GET  /dao/params
+
+XRPL Integration
+  POST /xrpl/payouts/prepare
+  POST /xrpl/payouts/submit
+  GET  /xrpl/bonds/:id
+  GET  /xrpl/account/:address
+    </pre>
+
+    <h2>Reward Budget Formula</h2>
+    <pre class="code">Reward_i = B_i × ( Σ_j ( uptime_j × agreement_j × bondWeight_j ) / Σ_all )</pre>
+
+    <h2>Architecture Overview</h2>
+    <figure class="figure">
+      <img src="assets/img/system-diagram.png" alt="XNODE architecture diagram"/>
+      <figcaption class="cap">Refer to the whitepaper for detailed module descriptions and security considerations.</figcaption>
+    </figure>
+  </div>
+</main>
+
+<footer class="footer"><div class="container"><p>© XNODE</p></div></footer>
+<script src="js/main.js"></script>
+</body></html>

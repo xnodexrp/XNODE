@@ -1,0 +1,106 @@
+
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>XNODE — Validator Rewards for XRPL</title>
+<meta name="description" content="XNODE is a community-led protocol exploring sustainable validator rewards on XRPL through telemetry, a DAO-managed treasury, and XRPL-native payouts."/>
+<meta property="og:title" content="XNODE — Validator Rewards for XRPL"/>
+<meta property="og:description" content="Sustainable validator rewards, DAO governance, and DeFi integrations for XRPL."/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="assets/img/xnode-banner.png"/>
+<link rel="icon" href="assets/img/xnode-logo.png"/>
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner container">
+      <a class="brand" href="./"><img src="assets/img/xnode-logo.png" alt="XNODE logo"/> XNODE</a>
+      <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">☰</button>
+      <nav id="menu">
+        <a class="active" href="./">Home</a>
+        <a href="whitepaper.html">Whitepaper</a>
+        <a href="developer.html">Developers</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="docs.html">Docs</a>
+        <a href="community.html">Community</a>
+        <a class="cta" href="mailto:founder@xnode.org?subject=XNODE%20Builder%20Collab">Build with us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container wrap">
+        <div>
+          <span class="kicker">Phase 0 — Research</span>
+          <h1>Validator rewards for XRPL, built by the community.</h1>
+          <p>XNODE is an open initiative to prototype a DAO-governed, sustainable rewards layer for XRPL validators — using transparent telemetry, a DAO‑managed budget, and on-ledger payouts.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin:14px 0 6px">
+            <a class="button primary" href="whitepaper.html">Read the Whitepaper</a>
+            <a class="button" href="developer.html">Explore the API</a>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">
+            <span class="badge">Open-Source</span>
+            <span class="badge">XRPL-first</span>
+            <span class="badge">Telemetry-driven</span>
+          </div>
+        </div>
+        <div class="hero-visual"><img src="assets/img/xnode-banner.png" alt="XNODE neon banner"/></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid-3">
+        <div class="card">
+          <h3>Why XNODE?</h3>
+          <p>XRPL validators secure the network but have no native rewards. XNODE proposes a fair, opt-in incentive layer that leaves consensus untouched.</p>
+        </div>
+        <div class="card">
+          <h3>How it Works</h3>
+          <p>Watchers collect uptime & agreement; a Reward Engine scores epochs; the DAO sets budget <b>B</b>; payouts stream on-ledger.</p>
+        </div>
+        <div class="card">
+          <h3>Built for Sustainability</h3>
+          <p>Diversified treasury inflows (LP fees, grants, bond fees) and adaptive budgeting reduce sell pressure and extend runway.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="container">
+        <h2 style="margin:0 0 12px">System Architecture</h2>
+        <p class="kicker" style="margin:0 0 16px">Validators → Watchers → Reward Engine → DAO Treasury → XRPL Payouts</p>
+        <figure class="figure">
+          <img src="assets/img/system-diagram.png" alt="XNODE system diagram"/>
+          <figcaption class="cap">High-level flow of the XNODE protocol. See the Developer page for endpoints.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid-3">
+        <div class="card">
+          <h3>Telemetry</h3>
+          <p>Independent watcher agents collect uptime, agreement %, and latency. Attestations cross-check integrity.</p>
+        </div>
+        <div class="card">
+          <h3>DAO Treasury</h3>
+          <p>Multi-sig to start; later token-holder voting. Epoch budgets align incentives with treasury health.</p>
+        </div>
+        <div class="card">
+          <h3>DeFi Hooks</h3>
+          <p>Optional MPT/TEA validator bonds, AMM liquidity, and streaming payouts via payment channels.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container foot-grid">
+      <div><img class="logo-small" src="assets/img/xnode-logo.png" alt=""/><p>© XNODE — Community-first infra for the XRP Ledger.</p></div>
+      <div><h4>Project</h4><a href="whitepaper.html">Whitepaper</a><br/><a href="roadmap.html">Roadmap</a><br/><a href="docs.html">Docs</a></div>
+      <div><h4>Community</h4><a href="community.html#telegram">Telegram</a><br/><a href="community.html#x">X (Twitter)</a><br/><a href="community.html#governance">Governance</a></div>
+      <div><h4>Contact</h4><a href="mailto:founder@xnode.org">founder@xnode.org</a></div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body></html>
